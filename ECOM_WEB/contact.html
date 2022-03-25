@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .form{
+                background-image: url("https://www.w3schools.com/howto/img_mountains.jpg");
+                
+                   
+                    font-family: sans-serif;
+                    width:300px;
+                    margin:50px auto;
+                    padding:40px;
+                    border-radius: 20px;
+                    text-align: center;
+                    height: 500px;
+                
+            }
+            .form input{
+                width:100px;
+                height: 20px;
+                margin:20px auto;
+               
+                margin-bottom: 20px;
+                margin-left: 60px;
+               
+                color: white;
+            }
+            .form .btn{
+                border:2px thin black;
+            }
+            .home{
+                background-color: blueviolet;
+                width:100px;
+                
+            }
+           
+           
+        </style>
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Account- MyShop</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Merriweather:wght@900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+      </head>
+    <body>
+        
+       
+          <div class="container">
+
+            <div class="navbar">
+            <div class="logo">
+                <img src="https://png.pngtree.com/png-clipart/20200709/original/pngtree-logo-of-my-shop-online-shop-png-image_3716950.jpg"  width="120px">
+            </div>
+
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a>
+                    <li><a href="products.html">Products</a>   
+                    <li><a href="about.html">About</a>
+                    <li><a href="contact.html">Contacts</a>
+                    <li><a href="account.html">Account</a>       
+                    
+                </ul>
+            </nav>
+            <img src="https://img.freepik.com/free-vector/shopping-cart-with-products-illustration-buying-food-supermarket-grocery-store-trolley-fresh-fruits-vegetables-purchase-dairy-products-cereals-healthy-diet-nutrition_276875-342.jpg?size=338&ext=jpg" width="30px" height="30px">&nbsp;&nbsp;&nbsp;
+            <img src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-13.png" class="menu-icon"
+             onclick="menutoggle()">
+
+        
+        
+        </div>
+    </div>
+
+
+
+<!------------Account page--------->
+<div class="Account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col2">
+                <img src="home_img2.jpg" width="100%">
+
+            </div>
+            <div class="col2">
+                <div class="form">
+                    <div class="form-btn">
+                        <span>Contact Us</span>
+                       
+                        
+                    </div>
+                    <form>
+                        <input type="text" placeholder="user name"><br>
+                        <input type="email" placeholder="email"><br>
+                        <!--<input type="number" placeholder="mobile number">-->
+                        <div classs="msg">Message<textarea> </textarea></div>
+                        <button type="submmit" class="btn">submit</button><br><br>
+                     
+                    </form>
+
+                 
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="home">
+    <a href="index.html">Back to Home</a><br><br>
+   </div>
+  
+<!-------footer------>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>Download our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="applogo">
+                    <img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAacAAAB3CAMAAACQeH8xAAAAgVBMVEX39/cAAAD////7+/v8/PxaWlpFRUV1dXX09PSLi4s/Pz/CwsLv7+/Ozs6amprGxsba2trk5OSqqqrW1tampqZubm6wsLB7e3u5ubljY2NVVVWhoaHn5+dLS0sbGxuFhYWQkJAyMjIVFRU4ODglJSWXl5dgYGApKSkQEBBpaWlPT09z3VkXAAAPw0lEQVR4nO2d6XqqMBCGyVJFBRUXpGJV3Kre/wUeyCQhG4pd7Xny/ThHEYPJm0wmk4EGgZeXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl9cXCpeiv/0jvO6IhL3ta5FH+Ld/iNdtLRHazhE6hp7UE4umqNRmUf4zDDyppxV+rTihRa/6Nyd+nnpS4RfGCV2O7L+celJPKcEJveTw/8SPqWeU5ISuE/h/50k9oWpOqJ/yF4fUk3o2KZxQkcpXWeBJPZVUTmid7cTLvSf1VNI4IZS+y5cdT+qJZHBCaR95Uk8okxOaLZU3bwNP6jlkcUL5q/ru+tWkSK0vLfc/l80JHbva2+Xo61qUYLIaj+NRqXicRL+0nfIXe4mDE+ot9PcvX0SK0PFxeajLLeZZhH+hvcbTUuOfv+5n5OLEo7IaKfrp9iQ4vlhXKoarnw/S76sr78Mfv+5n5OSE5lvzyCn+ZM/H41fXldBhGP2w9SOd6rqdn73oZ+XmhF6H1qFPkSLELlCOqexnh9T/xAktc/vYafpRUiRSvX1U9Pdr9f3ia+t0T/8TJ/Q2O9sHLx8jRVZ1mOPtGEdRGEVJtqlditWPehMf4UQoFqKUWu4i+e5koEZOqD9ZO45exo+TIitZ0nwaYKgjoTTM+Cg7/uwM9QFOdPve71yXp0t3sdnm6WA0pmo7kLjodPq9b6xGMydUTA6uw/NHSZFIjKbOVHcbKRlVpBY/7Jt/gBPemM3wvlBsCxlVh7rfOM/e4IQOk8J5/EFS8hJb27knZNTZ/PRq90s4Ve0Qifr8Lid0nvTdH3ST9qSw8EhGzmr8QmTgqzghNOZd7Jc5ITR7a/igu2pJiiT8G9OnyTr7Ok5oDI3w65xQ3vj5ot2YwnM4/YcXSbf0cU5vi80xn83ynmyViH38+5zQ0A72cG23LaJzZAwnf2cdHtXHOY2YV14KBzxic2H1egJOaNt1H6/mrs3dtHTMY7rPFJ7+OKesrgbmySTT6tAzcEIbl23epQVQvBOdi2DplD7TduMnxpPS3TCMqE0F5yk42eHzKnVMRhhukiIZUP1IDQizMDcGIj+h+QxCnB+7ON25GOcUqydg1gUPz8NJJDXXek/VWMUwbCTFvYjHAw6UhHE6PA4no8idTEhJNJrkw2GeJYGzfQkJk0GaZnEEn1O5Odg3OREajvLeppePwgbqnNNU/ZTO2LGEPA0ndNKjsvuJEfvLG0kV7PPxg9MTDdOTLPwtt0csIVkd2T1sxlbzlgvoufi82CQl9tnl5YUZKZMTodN6Cp7HTui4Z9eDTNmx2M2JlD5WWP6rFtewkdxmd7kdJ3SdKW86E+vzs5sUr8ruwUATUdLTmIZGRei4o58wT/TL00Tf7dqsWEO/VC0Z6pxINNeLcgWFnZzGjZyqAbq9XPud0yZdyd9OknGpxCw+isbx3UB0S06oXw8hjZnUOnfc6Manp1dHvMgl0XD2UqCjcaB2R0GZdkK8s88odbI50bEZbj5M7S7n5JTJYwYnuuop17+I8vgXIq1kOpQ/7JbackKFmJJeHDtTUD97TPHqbc3jJIkdglYgK1ewaqc0ETWnS6a8riqdNvxEm5NY32myQbk48aZjpWicaGZMC72Ahy2YFci10sOiOpZ91XiSLp5jp1eqmAT69bgbMTTr7W7pOXOdIhmq6s83c2nfDjLoSeV4Xi+73aXsuakARVYy0N+5dF+UqP+rPZ7EaFqfNptLwV9bZsjBCQ/YoSX70ew154Tt0f4KyRhw82ahFgzfvJ+s0Z4TOqf78rdYmROarnoNMXgDucXJCXtb1ZOK1dolru7EJ1NhBF85BhLzA8UkqXbnElmWaEUqvlLtdmG8qg3AxeQkluFou6rKivjm6Pw+J8wHIrO3KiciBvNheTrt+esutADs8AxU14LNo8O7nuIDnBCa7Lv2UkrXm4YEQ4vZ48nJqcIpKUy4o0Rwxo+I6vHxtuBRK4ITbihf4DIUOjraDeQJBS/C5CSCxLsRj4DhGEDFBijOKRFhIxxy2/YOl1A4YXBEO4NVeVoUn9Qfj4/K76x/wM7yLT7HCWVOe6VJG1BN85ObUxW0IKJedQ/DHF2HHaIc20bZpQu5dYRwAYGGOo/lVeVO5dzgJIZTLE0mt9Sm58Mrshjms9ksH/a6wh6PqMmJsol8zhd1hMJoBjYkYXTrYUm39Re/jtPxtGmMynL1NSTcw7mY3cU9P5WTqZjWNUOghdIC+MFv2mUiOIENF2F3VAeQ8mJNToSfKkxquZLiLoAxQ+EGO3KEb2rzE13Nlq+h/D5m0+kZhgx0jIX8aSGbHs3R+0lOw9KWbhc3TzlrK3bRZmtrFTqdCeXD7eIKXy5tAwfY1+dVDKauimoISxVr/YG7FoeobtKTPlHCrNfVOYGbJmLeNBjUi664FSdhKDROVUmqP0VZqXysQ4MI1xyMw7VFtOYBTrAV5YzKCpnLTZ57iiz7C+E0YewJNHPJGKZVNNMNAbd1VyxcJtQxHaS6dbnZG+kdBvAudE4cL/sWjib12nk5cts9XeuBqK3OCQ5BhlJp/WDK5aEzmL3EhA2/NftSThMxfzd6fJepFXPBEJGxHAld3HmIhENkxZnArh2IHBgbw6JTmFYmtCTCTMlaX01y78PgxAurmnSqZKnN48Cqh81pf6zDWSanknqcDTeLRW8SRziRlxZn8gANWPn3NhnUrTnVN7Bd3Cuo16krdAW+1+E2J8xKfMcCyN5sZMwOn8tJg4M390n4bN3DYoZ7MUoAd9/kxGbbMw6VYOG6lzjqITnt3vvLy6I3zBI1/GJwwuNuHfh6B+dcLCsoewdDCH7UsU34tiWnM99ugjZw5sq6Y4l8/+n20MY7UU3gdLW6M5QylobRtEvcHJYc+AywMAccm/g2Bieo/Lxu1Gsa3YjDXsIoisIq59LYLtE4EeIyksIZh5hXn53Kanu+75QHbTmtUy2V72quuJdxU8SXe76WJ6G1YSZZ3uXE17A3OMUPcKqD8vCladMDGYBTo/+sc3L6xNJBDVmnrOZEMALzVrshrTjp201IedQENGsjpdpLNicUVRQ6QWXsgFO/we6VPY9zb7B7pf/FL2gtgNis2nPZPVHJ3D2U4OuMkwm/rqW6zq1H077TKcRr6fnAL6l8InIWxO6rDad9aqWaF6kMq/Vv3xsl2mLQCIpXDGIFTv+Qe2vrUCwMocEVcT+ixMfnp3cDNXRyk1Ptu14H5FY12nOSYaNtAnsAU/hpsu+RFXtfDl3W2TvtNhdbcOo7dhHQgVvC/uDOHWwyID1uMik8zMP6Vd3eqrhVq4w6X/JczavUZUQFbwf9DNbV2HpH8ctFzV6nd5L4gVOjUVA48YDGWWbNEeiptY2AM64YjHkbpzxow+nNud0EiSxFdv8+Qyz8+NhZSxEVWkLQBXzJN2OVCU1fNRNZnR0YOEhY58IAnlPHCUedkwgmDu7mtwEncxRLKZwi6L9Kr4RRW/uwYh+Y/aTDnQvLQu5xatxuQse3tNVT4KhYP+aO5pBRVjB1ItwwwY5zRsqIM1wNOIFtL4kAoBqxEIElgxOf94wpgjqcCeC0vc+Jo1dHXviucwowaxCY8u9Hyvl37nBq3m56T1ve8CMaqRwmZgotDcUMIRYRIg6rJKNTzg4WYWIMbJSRLCoBQWlu+JRNJCK6ytDkBF7JVesVXXS0/CLg1JiOY3GaKcMJOrrCiS8qmdre+XWHk32jLtfhgae/yRTzciYey+Sr6gYoeS/cUgasxTScYbGvISY4PmkJkl3xYAvK11RiT0Xs070nYmkZiq3H3OAkJs+F7D+EVOjeQtNd7EnMzhqanGqPQ9h1de2O5SqndYrSbU6OzL2HKQV1uJo1Zj6tWiMIVlkd0u0r54pLzpMqCEgi8V44RtIxWacBS7nLxKJBRpt4XBcNI7YkrbfBZwYnEd5A1zG7SZDSKSA9OTnNWnBK+AYWX0vhEbI51TvSprfTqJucGmKu69mjz2ghkZbzcOh39up7rfuS+smNvWOvvl9E7rvjevHWHR7rJZCc05R999P2uFDWfhOTUxCI9cUyH8WDXMSPzI1w4DS5z0nE9svJFJfoV7IF9ViYqHjrjL9bnMznffBGdiUW3ZM7lsK10KYDEnVcJykOVIs8Ftctq4ibTj2PZeU80b2f25h9rXASbgy6HmdHJTlN4yTWwnfTV+pvNHPazh0H18MPPuccj5eO4koV5gqYRCfrpP1KS/uyfdCzdt8OTZysYbGijyey2lunLa21HjRs41pHy4+w6smGrMZJLNzbm6VmTkfHczl2x4//3QCC41f7FvpiZidoEmJ4L7uhmccUm3mWK70UEmjj99wdMHPE+q+ZZxkaV+s7FoWcU1P31zhFBvh8ZnHiizwrv6dZjZyG9ge7Njc83RDByUx9vhHad0fuhGd1Y2B9ndjP1iEku8piioXjhmGcLEQR526CYfebrcDCt916vXsLlVO3smnXJ+dDB2GtOrjNiUdU9TzRfgz7T4XOifWVqH1rNnA659YNn7te21s9m1W6X6tpduxeLvPFcDAOGgskOJqO0nyYZ3GCnTEPSsdZb/56WUzi0FlMWcToOD+dFmm1agNTCdNOUmmlnRrGk818vshHDXWk6bzbnTemyZPppfxYDA9CRzwTsHjNyqFNRovufKPZPeYFNoYLHXJz2s3MnNTd5oFbp2+Kb0ibWziu827fNkMIL6e5CCpPAMMFnFzp+OLUpsLYxzeupD/no+wj4yrBV6aulVJPh933R+6OcHKyH0jwZZR+S+Dtt16ufMEFb9yFAUvA6yNTvYuT9YCPlrdMP5Gs4QJbp4/e3/NNgtV142zn/IrNaW88MOcPUqJjYwEE01Nh7j/+jngS7EOes82po9+Ethh//hGJPywyKCulPWyIRKxOyw8vKr5UMFc+4JQHDk76dlP371EKCIRRlPgEgVTHB5vm2wT7B489T9PkpD13b/4HKZU2joe7hsJc0wCirbuffXxckyAK+4hTHlic1O2mS0Oq17NLBn1P0+qxHBiP+gLcb/80JsK8tFbZYLV0Tsp2kzNt8m+IJPJBcr003YhYw8tz1AcCtY9OlRqnervpxX3b9x+RK7aK9g9Eab5TEDJ6yCkPdE5yH2P5pykFzpB7/zkmJ36r0cMPPlE4ib8D0PnrlIIqUmNkSfXMnfTfEhnkpdolVyqqOeUQ5e2P/tqq1i0abQtRtdPkp5+RfkPkztOA3JKcZuxF8Z9QClhkNZiOBoM4+h/+LLrglFbbOcX9hMO/pT/4B08aJO4nKp2Q9+w/o/Q/CfLN0gId2qZNev2KqnvahrtDuxRkr98THU0HA/8Hc59f/81c6+Xl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl9d36B7oW0U1PypHfAAAAAElFTkSuQmCC">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Qa9IUcUSq8yBHjxmSTiO3W8dbsM4a91pgD2IcyKQ691sVJct78IcBh_egxQaoDWUSeA&usqp=CAU">
+                </div>
+            </div>
+            <div class="footer-col2">
+                <img src="https://png.pngtree.com/png-clipart/20200709/original/pngtree-logo-of-my-shop-online-shop-png-image_3716950.jpg"  width="120px"> 
+                <p>our purpose Is To sustainably make the Pleasure and Benefits to our customers!</p>
+
+            </div>
+            <div class="footer-col3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog post</li>
+                    <li>Return Policy</li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&#169; copyright-MyShop.com</p>
+    </div>
+</div>
+
+<!--------js for toggle menu-->
+
+<script>
+    var menuitems=document.getElementById("menuitems");
+    menuitems.style.maxHeight="0px";
+
+    function menutoggle(){
+        if( menuitems.style.maxHeight=="0px")
+        {
+            menuitems.style.maxHeight="200px";
+        }
+        else{
+            menuitems.style.maxHeight="0px";
+        }
+
+    }
+</script>
+
+</body>
+</html>
